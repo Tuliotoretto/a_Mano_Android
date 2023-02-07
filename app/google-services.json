@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "347779238893",
+    "project_id": "a-mano-b35c0",
+    "storage_bucket": "a-mano-b35c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347779238893:android:4b7ab8c7819c25528e35e4",
+        "android_client_info": {
+          "package_name": "dgtic.unam.amano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347779238893-8at48qls8k1c3nonnijuufffvjptghud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dgtic.unam.amano",
+            "certificate_hash": "ecba47b39a36c6b8628f8cf2a2d2cc66e473d232"
+          }
+        },
+        {
+          "client_id": "347779238893-ctrfo1ft7ac8rt0om45p3dqol5jvapo4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo6Rjm22Xcw70jq3HvNybhwdccu1C09mU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347779238893-ctrfo1ft7ac8rt0om45p3dqol5jvapo4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "347779238893-ru4q3afa6m9ge6p1jaete4lkcb9d81ur.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.garcia.julian.aMano"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

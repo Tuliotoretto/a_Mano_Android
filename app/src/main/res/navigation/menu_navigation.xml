@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_navigation"
+    app:startDestination="@id/groupsFragment">
+
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="dgtic.unam.amano.GroupsFragment"
+        android:label="@string/groups"
+        tools:layout="@layout/fragment_groups" >
+        <action
+            android:id="@+id/action_groupsFragment_to_addGroupFragment"
+            app:destination="@id/addGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="dgtic.unam.amano.AddFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="dgtic.unam.amano.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/addGroupFragment"
+        android:name="dgtic.unam.amano.AddGroupFragment"
+        android:label="fragment_add_group"
+        tools:layout="@layout/fragment_add_group" >
+        <action
+            android:id="@+id/action_addGroupFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+    </fragment>
+</navigation>
