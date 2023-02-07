@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/addGroupFragment"
         android:name="dgtic.unam.amano.AddGroupFragment"
-        android:label="fragment_add_group"
+        android:label="Nuevo grupo"
         tools:layout="@layout/fragment_add_group" >
         <action
             android:id="@+id/action_addGroupFragment_to_groupsFragment"

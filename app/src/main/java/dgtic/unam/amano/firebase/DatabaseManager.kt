@@ -45,6 +45,20 @@ object DatabaseManager {
 
     // TODO create group
 
+    fun createGroup(group: Group, completion: ((res: Boolean) -> Unit)?) {
+        val db = Firebase.firestore
+        db.collection("groups").add(group)
+            .addOnSuccessListener {
+                completion?.invoke(true)
+            }
+            .addOnFailureListener {
+                completion?.invoke(false)
+            }
+            .addOnCanceledListener {
+                completion?.invoke(false)
+            }
+    }
+
     // TODO get all groups manually
     fun getAllGroups(userid: String, completion: ((groups: List<Group>?) -> Unit)?) {
         val db = Firebase.firestore

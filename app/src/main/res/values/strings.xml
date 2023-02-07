@@ -29,4 +29,6 @@
     <string name="i_paid">Pagué</string>
     <string name="other_paid">Me pagó</string>
     <string name="add_button">Agregar</string>
+    <string name="new_group">Nuevo Grupo</string>
+    <string name="create_group">Crear Grupo</string>
 </resources>
