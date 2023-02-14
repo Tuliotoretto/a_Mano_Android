@@ -4,6 +4,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import dgtic.unam.amano.R
 import dgtic.unam.amano.databinding.ItemGroupBinding
 import dgtic.unam.amano.databinding.ItemGroupHeaderBinding
 import dgtic.unam.amano.firebase.AuthManager
@@ -45,7 +46,15 @@ class GroupAdapter(private val groupItemList: MutableList<Group>)
         fun bind(userName: String, userDebt: Double, imageUri: Uri?) {
             this.userName.text = userName
 
-            this.userDebt.text = userDebt.toString()
+            var debtText = ""
+            debtText = if (userDebt == 0.0) {
+                "Estas a mano!"
+            } else if (userDebt > 0.0) {
+                "Te deben $userDebt"
+            } else {
+                "Debes $userDebt"
+            }
+            this.userDebt.text = debtText
 
             if (imageUri != null) {
                 StorageManager.downloadImage(

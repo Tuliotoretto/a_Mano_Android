@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         val phoneBuilder = AuthUI.IdpConfig.PhoneBuilder()
 
         // TODO DELETE THIS
-        phoneBuilder.setDefaultNumber("+16505551111")
+        //phoneBuilder.setDefaultNumber("+16505551111")
 
         val providers = arrayListOf(
             phoneBuilder.build()
